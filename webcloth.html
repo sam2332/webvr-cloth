@@ -24,12 +24,12 @@
 
 		<script type="module">
 
-			import * as THREE from '../build/three.module.js';
+			import * as THREE from 'three.module.js';
 
-			import Stats from './jsm/libs/stats.module.js';
-			import { GUI } from './jsm/libs/dat.gui.module.js';
+			import Stats from 'stats.module.js';
+			import { GUI } from 'dat.gui.module.js';
 
-			import { OrbitControls } from './jsm/controls/OrbitControls.js';
+			import { OrbitControls } from 'OrbitControls.js';
 
 			/*
 			 * Cloth Simulation using a relaxed constraints solver
@@ -461,7 +461,7 @@
 				// cloth material
 
 				var loader = new THREE.TextureLoader();
-				var clothTexture = loader.load( 'textures/patterns/circuit_pattern.png' );
+				var clothTexture = loader.load( 'circuit_pattern.png' );
 				clothTexture.anisotropy = 16;
 
 				var clothMaterial = new THREE.MeshLambertMaterial( {
@@ -500,7 +500,7 @@
 
 				// ground
 
-				var groundTexture = loader.load( 'textures/terrain/grasslight-big.jpg' );
+				var groundTexture = loader.load( 'grasslight-big.jpg' );
 				groundTexture.wrapS = groundTexture.wrapT = THREE.RepeatWrapping;
 				groundTexture.repeat.set( 25, 25 );
 				groundTexture.anisotropy = 16;
