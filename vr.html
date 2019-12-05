@@ -14,14 +14,14 @@
 			<a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> vr - sculpt
 		</div>
 
-		<script src="js/vr/HelioWebXRPolyfill.js"></script>
+		<script src="HelioWebXRPolyfill.js"></script>
 
 		<script type="module">
 
-			import * as THREE from '../build/three.module.js';
-			import { OrbitControls } from './jsm/controls/OrbitControls.js';
-			import { MarchingCubes } from './jsm/objects/MarchingCubes.js';
-			import { VRButton } from './jsm/webxr/VRButton.js';
+			import * as THREE from './three.module.js';
+			import { OrbitControls } from './OrbitControls.js';
+			import { MarchingCubes } from './MarchingCubes.js';
+			import { VRButton } from './VRButton.js';
 
 			var container;
 			var camera, scene, renderer;
