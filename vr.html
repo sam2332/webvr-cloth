@@ -142,7 +142,6 @@
 
 			function initBlob() {
 
-				/*
 				var path = "textures/cube/SwedishRoyalCastle/";
 				var format = '.jpg';
 				var urls = [
@@ -152,11 +151,10 @@
 				];
 
 				var reflectionCube = new CubeTextureLoader().load( urls );
-				*/
 
 				var material = new THREE.MeshStandardMaterial( {
 					color: 0xffffff,
-					// envMap: reflectionCube,
+					envMap: reflectionCube,
 					roughness: 0.9,
 					metalness: 0.0,
 					transparent: true
